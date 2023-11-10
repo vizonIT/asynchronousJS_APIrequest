@@ -1,1 +1,48 @@
-*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.countries-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  margin: 100px 0;
+  border-radius: 30px;
+  background-color: rgb(180, 177, 177);
+  padding: 100px 200px;
+}
+
+.flag {
+  height: 250px;
+  width: 300px;
+}
+
+.country-card {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 50px; */
+  align-items: center;
+}
+
+.other-data {
+  padding: 20px;
+  background-color: azure;
+  font-size: 26px;
+  width: 400px;
+  border: none;
+  border-radius: 15px;
+}

@@ -31,6 +31,7 @@ const getCountriesData = function (country) {
     const html = `
      <div class="country-card">
          <img src="${data.flags.png}" alt="flag" class="flag">
+  
          <div class="other-data">
          <div class="cname">${data.name.common}</div>
          <div class="region">${data.region}</div>
