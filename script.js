@@ -6,7 +6,7 @@ const countryContainer = document.querySelector('.countries-cards');
 
 // make a callback
 const getCountriesData = function (country) {
-  // teling js you want to make a request and the data should be the value of "request".
+  // telling js you want to make a request and the data should be the value of "request".
   const request = new XMLHttpRequest();
 
 
@@ -33,15 +33,15 @@ const getCountriesData = function (country) {
          <img src="${data.flags.png}" alt="flag" class="flag">
   
          <div class="other-data">
-         <div class="cname">${data.name.common}</div>
-         <div class="region">${data.region}</div>
-         <div class="population">${(+data.population / 1000000).toFixed(1)}</div>
-         <div class="language">${Object.values(data.languages)[0]}</div>
-         <div class="currency">${Object.values(data.currencies)[0].name}</div>
+         <div class="cname"><span>Country: </span>${data.name.common}</div>
+         <div class="region"><span>Region: </span>${data.region}</div>
+         <div class="population"><span>Population: </span>${(+data.population / 1000000).toFixed(1)}</div>
+         <div class="language"><span>Language: </span>${Object.values(data.languages)[0]}</div>
+         <div class="currency"><span>Currency: </span>${Object.values(data.currencies)[0].name}</div>
    </div> 
   </div>` ;
     countryContainer.insertAdjacentHTML('beforeend', html);
   })
 };
 
-getCountriesData('canada');
+getCountriesData('United Kingdom');
