@@ -44,4 +44,9 @@ const getCountriesData = function (country) {
   })
 };
 
-getCountriesData('United Kingdom');
+getCountriesData('Nigeria');
+getCountriesData('USA');
+getCountriesData('UAE');
+getCountriesData('Cameroon');
+getCountriesData('Spain');
+getCountriesData('Uk');
